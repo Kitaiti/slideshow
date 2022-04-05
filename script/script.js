@@ -1,5 +1,4 @@
 $(function () {
-    //jQueryを使う場合ここに。
     var slideWidth = $('.slide').outerWidth(); // .slideの幅を取得して代入
     var slideNum = $('.slide').length; // .slideの数を取得して代入
     console.log(slideNum)
@@ -166,12 +165,4 @@ $(function () {
     //イベント発火
     sliderNext();
     sliderPrev();
-});
-
-
-window.addEventListener("load", () => {
-    //ネイティブなJavaScriptで記述する場合は、こちら。
-    /*let lastimage = document.querySelectorAll("img");
-    let slidewapper = document.querySelector(".slide");
-    slidewapper.insertBefore(lastimage[lastimage.length - 1], lastimage[0]);*/
 });
